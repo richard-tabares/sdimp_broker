@@ -77,8 +77,8 @@ cat ~/.ssh/id_ed25519.pub (ejemplo)
 
 **Nota** Usar enlace de ssh para github en lugar de https
 
+### Crear e ir al directorio broker
 ```bash
-# Crear e ir al directorio broker
 mkdir broker
 cd broker
 ```

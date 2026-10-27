@@ -1,5 +1,34 @@
 # Guía de Instalación y Configuración en Linux / Raspberry Pi
 
+## Despues de instalar Raspberry PI OS Configurar IP - MASK - GATEWAY - DNS
+### Listamos la conexion, para ver como se llama y poder abrir el archivo de configuracion
+```bash
+sudo ls /etc/NetworkManager/system-connections/
+```
+### Abrimos el archivo de configuracion
+```bash
+sudo nano /etc/NetworkManager/system-connections/"Conexión cableada 1.nmconnection"
+```
+### Editamos la informacion, si no existe la agregamos
+```bash
+[ipv4]
+addresses=10.1.15.9/24
+gateway=10.1.15.215
+dns=8.8.8.8;1.1.1.1
+method=manual
+```
+### Reiniciamos el servicio
+```bash
+sudo systemctl restart NetworkManager
+```
+
+### Ver archivo de DNS y modifica dns (otra forma)
+```bash
+sudo nano /etc/resolv.conf
+```
+Añade o reemplaza las líneas con los servidores DNS públicos:
+nameserver 8.8.8.8
+nameserver 1.1.1.1
 ## 1. Actualización inicial del sistema
 
 Antes de instalar cualquier paquete, actualiza la lista de repositorios e índice de paquetes del sistema operativo:
@@ -140,3 +169,16 @@ Desde tu laptop/PC conectada a la misma red de Tailscale:
 ssh sdimp@<IP-TAILSCALE-RASPBERRY>
 ```
 *(Ejemplo: `ssh sdimp@100.x.x.x` o `ssh sdimp@raspberrypi`).*
+
+
+**Comandos importantes:**
+- `cat /etc/os-release` ver informacion del sistemas operativo
+- `df -h` ver espacio en disco
+- `lsblk` ver particiones detallas 
+- `cat /sys/block/mmcblk0/device/name` Ver
+- `ifconfig` ver adaptadores de red eth0
+**Red:**
+- `ip -4 addr show` ver ip
+- `ip route show | grep default` ver puerta de enlace
+- `cat /etc/resolv.conf` ver dns
+- `nmcli device show eth0` ver informacion del adaptador de red

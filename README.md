@@ -60,6 +60,23 @@ tailscale status
 ### Estructura de Directorio
 Ruta (`/home/sdimp/broker/`).
 
+### Creamos clave ssh para conectar al repositorio
+En terminal de la raspberry ejecutar
+```bash
+ssh-keygen -t ed25519 -C "richardtabaresb@gmail.com"
+```
+Presiona Enter a todo para dejar las opciones por defecto
+
+### Copiamos la clave en la ruta que nos da
+cat ~/.ssh/id_ed25519.pub (ejemplo)
+
+### Agregar la clave a tu cuenta de GitHub
+- Ve a GitHub > Settings > SSH and GPG keys.
+- Haz clic en New SSH key.
+- Pega la clave y guárdala.
+
+**Nota** Usar enlace de ssh para github en lugar de https
+
 ```bash
 # Crear e ir al directorio broker
 mkdir broker

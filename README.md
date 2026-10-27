@@ -177,6 +177,7 @@ ssh sdimp@<IP-TAILSCALE-RASPBERRY>
 - `lsblk` ver particiones detallas 
 - `cat /sys/block/mmcblk0/device/name` Ver
 - `ifconfig` ver adaptadores de red eth0
+-  `sudo ssh-keygen -f '/root/.ssh/known_hosts' -R 'raspberrypi.local'` eliminar ssh viejo para una ip identica
 **Red:**
 - `ip -4 addr show` ver ip
 - `ip route show | grep default` ver puerta de enlace

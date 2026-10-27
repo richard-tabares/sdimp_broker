@@ -1,0 +1,24 @@
+{
+  "host": "10.1.15.9",
+  "puerto": 12345,
+  "equipos": 1,
+  "intervalo": 2.0,
+  "jitter": 0.05,
+  "duracion": 0.0,
+  "ramp": 2.0,
+  "seed": null,
+  "formato": "equipo",
+  "paso": 0.01,
+  "escenario": ["normal"],
+  "pct_alarma": 30.0,
+  "pct_desconexion": 30.0,
+  "desconexion_desde": 30.0,
+  "rangos": {
+    "CO2": [0.03, 0.8],
+    "CO": [0.0, 15.0],
+    "H2S": [0.0, 0.8],
+    "NO2": [0.0, 0.1],
+    "O2": [20.0, 21.5]
+  },
+  "verbose": false
+}

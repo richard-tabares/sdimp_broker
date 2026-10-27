@@ -1,0 +1,15 @@
+{
+  "Empresa": " Mina Loma Azul S.A.S",
+  "Mina": "La Loma",
+  "Equipo": "Equipo#1",
+  "Direccion":"192.168.0.102",
+  "Servicio":"http://localhost/Final/Final/service/seguridad.php",
+  "Equipos":15,
+  "TimeoutConexion":20000,
+  "HttpWorkers":6,
+  "HttpQueue":50000,
+  "MaxTramasPorFrame":10,
+  "HttpTimeoutConexion":5000,
+  "HttpTimeoutLectura":10000,
+  "LogTramas":false
+}

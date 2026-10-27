@@ -1,0 +1,150 @@
+    1  man sudo root
+    2  clear
+    3  rosnode list
+    4  rospack list
+    5  rospack list | grep rosserial
+    6  rospack list | grep magni
+    7  sudo apt-get install arduino arduino-core
+    8  sudo apt-get install ros-kinetic-rosserial-arduino
+    9  sudo apt-get install ros-kinetic-rosserial
+   10  sudo apt-get update
+   11  sudo apt-get install arduino arduino-core
+   12  sudo apt-get install ros-kinetic-rosserial-arduino
+   13  sudo apt-get install ros-kinetic-rosserial
+   14  arduino
+   15  sudo usermod -a -G dialout ubuntu
+   16  ls
+   17  cd catkin_ws/
+   18  ls
+   19  cd src/
+   20  ls
+   21  cd demos/
+   22  ls
+   23  lshwd
+   24  lshd
+   25  roscd
+   26  ls
+   27  cd ..
+   28  ls
+   29  cd dev/
+   30  ls
+   31  rostopic list
+   32  rostopic echo chatter
+   33  ls
+   34  cd sketchbook/
+   35  ls
+   36  cd libraries/
+   37  rosrun rosserial_arduino make_library.py
+   38  rosrun rosserial_arduino make_library.py .
+   39  ls
+   40  arduino
+   41  rosnode list
+   42  rostopic list
+   43  rosrun rosserial_python  serial_node.py /dev/ttyUSB0
+   44  pip install roslibpy
+   45  sudo apt-get install roslibpy
+   46  history
+   47  roslaunch websocket_gui turtle_draw_rectangle.launch
+   48  rosnode list
+   49  pip install roslibpy
+   50  who
+   51  ifconfig
+   52  history
+   53  curl https://processing.org/download/install-arm.sh | sudo sh
+   54  curl https://processing.org/download/install-arm.sh | sudo sh -k
+   55  ifconfig
+   56  ping 192.168.55.197
+   57  cd ..
+   58  ls
+   59  cd dev/
+   60  ls
+   61  exit
+   62  time
+   63  date
+   64  date /_
+   65  date /help
+   66  help date
+   67  date info
+   68  info date
+   69  ifconfig
+   70  ping 192.168.55.196
+   71  ifconfig
+   72  date
+   73  date /p
+   74  date /_
+   75  date /?
+   76  date
+   77  time
+   78  date -s "9 AGO 2021 16:36"
+   79  date -s "9 AUG 2021 16:36"
+   80  date --set= "9 AUG 2021 16:36"
+   81  date +%Y%m%d --set= "20210809"
+   82  date +%Y%m%d --s "20210809"
+   83  date +%Y%m%d -s "20210809"
+   84  timedatectl
+   85  wget --no-check-certificate--quietmethod POST --method POST\
+   86  /********  EQ3-SENSOR 1 - CO2 ******/
+   87  wget--no-check-certificate--quietwget--no-check-certificate--quiet\
+   88  wget--no-check-certificate--quietwget--no-check-certificate--quiet\--method POST\--tiemout=0\--header"\--body-data 'Mina=192.158.1.38&Equipo=1&S1=5&S2=200&S3=50&S4=20&S5=30'\
+   89  wget--no-check-certificate--quietwget--no-check-certificate--quiet--method POST--tiemout=0--header"\
+   90  --body-data 
+   91  'Mina=192.158.1.38&Equipo=1&S1=5&S2=200&S3=50&S4=20&S5=30'\
+   92  wget--no-check-certificate--quiet\
+   93  > --method POST\
+   94  > --tiemout=0\
+   95  > --header"> --body-data 
+   96  > 'Mina=192.158.1.38&Equipo=1&S1=5&S2=200&S3=50&S4=20&S5=30'wget--no-check-certificate--quiet--method POST\
+   97  wget--no-check-certificate--quiet\
+   98  wget--no-check-certificate--quiet\ 
+   99  --method POST --timeout=0--header"\
+  100  --body-data
+  101  'Mina=192.158.1.38&Equipo=1&S1=5&s2=200&S3=50&S4=20&S5=30'\
+  102  ifconfig
+  103  ping 169.254.79.89
+  104  ifconfig
+  105  ping 192.168.0.112
+  106  ifconfig
+  107  ping 192.168.55.198
+  108  ping 4
+  109  ping 169.254.79.89
+  110  ifconfig
+  111  clear
+  112  ifconfig
+  113  clear
+  114  ifconfig
+  115  ping 192.168.0.112
+  116  ifconfig
+  117  ping 192.168.0.112
+  118  ifconfig
+  119  ls
+  120  cd Desktop/
+  121  ls
+  122  cd broker/
+  123  ls
+  124  nano [2~sh
+  125  nano 00.sh
+  126  ls
+  127  ./ 00.sh
+  128  . 00.sh
+  129  curl;
+  130  curl
+  131  sudo apt -get install curl
+  132  sudo apt-get install curl
+  133  curl
+  134  curl --help
+  135  clear
+  136  ping www.google.com
+  137  ls
+  138  clear
+  139  ls
+  140  . 00
+  141  . 00.sh
+  142  . 01.sh
+  143  curl --location ---request POST "https://betagametest.com.co/sanei/sanei/service/minas.php" --form "Mina=192.158.1.38" --form "S1=5" --form "S2=5" --form "S3=5" --form "S4=5" --form "S5=15"
+  144  curl --location --request POST "https://betagametest.com.co/sanei/sanei/service/minas.php" --form "Mina=192.158.1.38" --form "S1=5" --form "S2=5" --form "S3=5" --form "S4=5" --form "S5=15"
+  145  curl -k --location --request POST "https://betagametest.com.co/sanei/sanei/service/minas.php" --form "Mina=192.158.1.38" --form "S1=5" --form "S2=5" --form "S3=5" --form "S4=5" --form "S5=15"
+  146  curl -k --location --request POST "https://betagametest.com.co/sanei/sanei/service/minas.php" --form "Mina=192.158.1.38" --form "S1=0" --form "S2=0" --form "S3=0" --form "S4=0" --form "S5=0"
+  147  clear
+  148  curl -k --location --request POST "https://betagametest.com.co/sanei/sanei/service/minas.php" --form "Mina=192.158.1.38" --form "S1=3" --form "S2=3" --form "S3=3" --form "S4=5" --form "S5=20"
+  149  histoy >> comandos.txt
+  150  history >> comandos.txt

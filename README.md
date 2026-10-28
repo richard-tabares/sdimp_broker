@@ -150,7 +150,9 @@ sudo nano /etc/xdg/autostart/display.desktop
 2. Añade la siguiente configuracion para el broker
 ```ini
 [Desktop Entry]
-Exec=/home/sdimp/broker/linux-aarch64/Broker
+Type=Application
+Name=Broker App
+Exec=/home/sdimp/broker/run_broker.sh
 ```
 3. Guarda y cierra (`Ctrl + O`, `Enter`, `Ctrl + X`).
 
@@ -170,6 +172,32 @@ ssh sdimp@<IP-TAILSCALE-RASPBERRY>
 ```
 *(Ejemplo: `ssh sdimp@100.x.x.x` o `ssh sdimp@raspberrypi`).*
 
+## Automatizar el script de autoupdate.sh
+1. `sudo nano /home/sdimp/broker/autoupdate.sh`
+
+2. Pegar el codigo:
+```bash
+#!/bin/bash
+# Ruta a la carpeta de tu proyecto en la Raspberry Pi
+REPO_DIR="/home/sdimp/broker/"
+# Nombre de la aplicacion
+APP_NAME="Broker"
+# entrarmos a la carpeta
+cd "$REPO_DIR" || exit
+# Cerramos la aplicacion para tomar cambios
+sudo pkill -f "$APP_NAME"
+sleep 2
+# Actualizamos el repositorio
+git pull origin main
+sync
+export DISPLAY=:0
+/home/sdimp/broker/linux-aarch64/Broker > /home/sdimp/broker/broker.log 2>&1
+echo "El repositorio ya está actualizado."
+```
+**Nota:** Darle permisos al script de ejecucion: `sudo chmod +x /home/sdimp/broker/autoupdate.sh`
+
+3. Crear cron `crontab -e` y pegar al final
+`*/1 * * * * /bin/bash /home/sdimp/broker/autoupdate.sh > /home/sdimp/broker/autoupdate.log 2>&1`
 
 **Comandos importantes:**
 - `cat /etc/os-release` ver informacion del sistemas operativo

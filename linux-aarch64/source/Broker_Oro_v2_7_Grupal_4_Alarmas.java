@@ -248,7 +248,7 @@ public void dibujarTablero(){
   fill(azulFondo);
   textSize(alto*0.032f);
   textAlign(LEFT, CENTER);
-  text("Broker(admin)", ancho*0.012f, yCabecera*0.5f);
+  text("Broker", ancho*0.012f, yCabecera*0.5f);
 
   textSize(alto*0.026f);
   textAlign(CENTER, CENTER);
